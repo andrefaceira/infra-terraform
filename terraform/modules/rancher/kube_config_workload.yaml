@@ -1,0 +1,32 @@
+apiVersion: v1
+kind: Config
+clusters:
+- name: "quickstart-hcloud-custom"
+  cluster:
+    server: "https://rancher.49.13.7.34.sslip.io/k8s/clusters/c-m-pfs5n4bd"
+    certificate-authority-data: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJ2akNDQ\
+      VdPZ0F3SUJBZ0lCQURBS0JnZ3Foa2pPUFFRREFqQkdNUnd3R2dZRFZRUUtFeE5rZVc1aGJXbGoKY\
+      kdsemRHVnVaWEl0YjNKbk1TWXdKQVlEVlFRRERCMWtlVzVoYldsamJHbHpkR1Z1WlhJdFkyRkFNV\
+      Fk1TmprNApNVE14TnpBZUZ3MHlNekV3TVRBeU16UXhOVGRhRncwek16RXdNRGN5TXpReE5UZGFNR\
+      Vl4SERBYUJnTlZCQW9UCkUyUjVibUZ0YVdOc2FYTjBaVzVsY2kxdmNtY3hKakFrQmdOVkJBTU1IV\
+      1I1Ym1GdGFXTnNhWE4wWlc1bGNpMWoKWVVBeE5qazJPVGd4TXpFM01Ga3dFd1lIS29aSXpqMENBU\
+      VlJS29aSXpqMERBUWNEUWdBRUJKcHlmZnNLcDg3ZAp6eXduaGoyMmZFS3N5ODV1MGRLbzdGcDBGN\
+      3l0cGh5cWZzd2xhMldzWjIyR3MrS05qU3hEMjYzZE1sYndJQlFXCjBLMmFsYUFJMktOQ01FQXdEZ\
+      1lEVlIwUEFRSC9CQVFEQWdLa01BOEdBMVVkRXdFQi93UUZNQU1CQWY4d0hRWUQKVlIwT0JCWUVGQ\
+      ktEWm1xTTY4MWRsS28zakFZc01hTnlnK2VGTUFvR0NDcUdTTTQ5QkFNQ0Ewa0FNRVlDSVFEegprV\
+      zN5NGJTOFJVbXlyWjlVV0NWeWxtYlJFeWw5aDJncHNoNW9NeVpGNGdJaEFQK1Q0UlpMY04vUG1VU\
+      HVwRDl2CkhmWXNXblJCcG5Hc3Jsc1JJcTZHSW9FcgotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0t"
+
+users:
+- name: "quickstart-hcloud-custom"
+  user:
+    token: "kubeconfig-user-k4z6pqrs9w:xw4gt5c7mmmrdlwx9sdb92rc65tg86mzjddsdxb7ss79t5lgq4rlcj"
+
+
+contexts:
+- name: "quickstart-hcloud-custom"
+  context:
+    user: "quickstart-hcloud-custom"
+    cluster: "quickstart-hcloud-custom"
+
+current-context: "quickstart-hcloud-custom"
